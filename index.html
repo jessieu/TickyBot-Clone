@@ -7,23 +7,23 @@
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Patrick+Hand&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="navbar">
+    <section class="navbar">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Add to Slack</a></li>
+        <li><a href="#intro_section">Home</a></li>
+        <li><a href="#about_section">About</a></li>
+        <li><a href="#feature_section">Features</a></li>
+        <li><a href="#cta_section">Add to Slack</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="intro row">
+    <section class="intro row" id="intro_section">
       <div class="description column">
         <h1 class="brand-name">
           <strong>Ticky</strong>Bot
         </h1>
         <p class="slogan">Let your team manage their support tickets 100% inside Slack</p>
-        <a href="#">
-          <button type="button" name="button">
+        <a href="https://slack.com/signin?redir=%2Foauth%3Fclient_id%3D39189849459.249480535796%26redirect_uri%3D%26state%3D%26scope%3Dcommands%252Cbot%252Cusers.profile%253Aread%252Cim%253Aread%252Cchat%253Awrite%253Abot%252Cteam%253Aread%26user_scope%3D%26granular_bot_scope%3D0%26team%3D%26install_redirect%3D%26single_channel%3D0">
+          <button class="intro_btn" type="button" name="button">
             <img src="images/download.png" alt="slack_image">
             <span>Add to Slack</span>
           </button>
@@ -32,22 +32,85 @@
       <div class="bot column">
         <img src="images/tickybot.svg" alt="tickybot image">
       </div>
-    </div>
-    <div class="details">
+    </section>
 
-    </div>
+    <section class="about" id="about_section">
+      <div class="about_title">
+        <p>What Is TickyBot</p>
+      </div>
+      <div class="about_content">
+        <table>
+          <tbody>
+            <tr>
+              <td><p>TickyBot is a Slack Bot 🤖 that lets you use support tickets on Slack. This way, you don't need to leave your beloved channel to assist your users, if you don't feel like it.</p></td>
+              <td><p>With TickyBot you can easily check if you've received new tickets, change their status, or write a reply, and the ticket will instantly update itself on our site.</p></td>
+            </tr>
+          </tbody>
 
-    <div class="features">
+        </table>
+      </div>
+      <div class="about_more">
+        <p>Support requests shouldn't be handled through Slack's direct messages.</p>
+        <p><i>Image about someone asking silly questions and the workplace admin asking him/her to open a support ticket so other admins could look into the issue.</i></p>
+      </div>
+    </section>
 
-    </div>
+    <section class="features" id="feature_section">
+      <div class="feature_full">
+        <div class="feature_title">
+            <p>How it works?</p>
+        </div>
+        <div class="feature_content">
+          <div class="feature_row row">
+            <div class="card_col column">
+              <div class="card">
+                <img src="images/left_card.svg" alt="workplace">
+                <div class="container">
+                  <p>You can add TickyBot to your Slack workplace by scrolling down or clicking here</p>
+                </div>
+              </div>
+            </div>
+            <div class="card_col column">
+              <div class="card">
+                <img src="images/middle_card.svg" alt="ticket">
+                <div class="container">
+                  <p>Your users can open a ticket by typing `/ticket` and their message into the chat field</p>
+                </div>
+              </div>
+            </div>
+            <div class="card_col column">
+              <div class="card">
+                <img src="images/right_card.svg" alt="close">
+                <div class="container">
+                  <p>Once you or another admin solved their problems you can type /ticket close #id to close the ticket</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="cta">
+    <section class="cta" id="cta_section">
+      <div class="page_full">
+        <div class="page_title">
+          <p>Start Using <u><strong>Ticky</strong></u>Bot Today</p>
+        </div>
+        <div class="page_content">
+          <p>TickyBot allows Slack teams to manage their support tickets 100% inside Slack, without having to switch between different apps.</p>
+          <a href="https://slack.com/signin?redir=%2Foauth%3Fclient_id%3D39189849459.249480535796%26redirect_uri%3D%26state%3D%26scope%3Dcommands%252Cbot%252Cusers.profile%253Aread%252Cim%253Aread%252Cchat%253Awrite%253Abot%252Cteam%253Aread%26user_scope%3D%26granular_bot_scope%3D0%26team%3D%26install_redirect%3D%26single_channel%3D0">
+            <button class="page_btn" type="button" name="button">
+              <img src="images/slack.svg" alt="slack_image"><span>Add to Slack</span>
+            </button>
+          </a>
+          <p>... so you don't need to go back and forth with another app.</p>
+        </div>
+      </div>
+    </section>
 
-    </div>
-
-    <div class="info">
+    <section class="info">
       <p>Made with ❤️ by Weilan Yu @San Francisco</p>
       <p>The app is not created by, affiliated with, or supported by Slack Technologies, Inc.</p>
-    </div>
+    </section>
   </body>
 </html>

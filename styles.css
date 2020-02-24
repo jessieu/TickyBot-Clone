@@ -27,11 +27,12 @@ li a {
 }
 
 .row {
-  display: flex;
+  display: table;
 }
 
 .column {
-  flex: 50%;
+  /* flex: 50%; */
+  display: table-cell;
 }
 
 .intro {
@@ -42,17 +43,16 @@ li a {
 }
 
 .description {
-  float: left;
   margin-left: 20px;
-  vertical-align: bottom;
-  width: 250px;
+  vertical-align: middle;
+    padding: 20px;
 }
 
 .brand-name {
   font-family: 'Patrick Hand', cursive;
   font-size: 80px;
-  margin-top: 100px;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .slogan {
@@ -67,34 +67,134 @@ button {
   background-color: #fff;
   font-size: 30px;
   margin-top: 10px;
+  height: 70px;
+  width: 300px;
 }
 button img {
   float: left;
-  width: 30px;
-  height: 30px;
+  width: 20%;
+  height: 70%;
   text-align: center;
-  padding-right: 10px;
+  padding-right: 0;
+  margin-right: 0;
 }
-
+button span {
+  text-align: center;
+  vertical-align:middle;
+  padding-left: 0;
+  margin-left: 0;
+}
 
 .bot {
-  float: right;
-  margin-top: 30px;
+  /* float: right;
+  margin-top: 30px; */
+  vertical-align: middle;
 }
 
-.details {
+.about {
   background-color: #fff;
   height: 400px;
+  text-align: center;
+  margin: 0 70px;
+  font-size: 1.2em;
+}
+
+.about_title {
+  padding: 12px;
+  font-size: 2.5em;
+}
+
+tr {
+  text-align: center;
+}
+
+td {
+  padding: 30px;
+  padding-top: 0;
+}
+
+.about_more {
+  margin: 0;
+  padding-left:30px;
+  text-align: left;
 }
 
 .features {
   background-color: #0fabbc;
-  height: 300px;
+  height: 600px;
+  text-align: center;
 }
+
+.feature_title{
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 2.5em;
+}
+
+.feature_row {
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+
+}
+
+.card_col {
+  float: none;
+  width: 25%;
+  align-items: center;
+  column-gap: normal;
+}
+
+.card {
+  background-color: #40596b;
+  margin: 5px 50px;
+  width: 60%;
+}
+
+.card img {
+  margin-top: 20px;
+  width: 150px;
+  height: 200px;
+}
+
+/* Add some padding inside the card container */
+.container {
+  background-color: #fff;
+  padding: 12px;
+  vertical-align: bottom;
+}
+
 
 .cta {
   background-color: #fff;
   height: 500px;
+  text-align: center;
+}
+
+
+.page_title {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.page_content {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:5px;
+  font-size: 1.2em;
+  width: 25em;
+  line-height: 26pt;
+}
+
+.page_btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #b9cced;
+  color: #fff;
 }
 
 .info {
@@ -102,4 +202,5 @@ button img {
   height: 100px;
   text-align: center;
   padding-top: 5px;
+  margin-bottom: 0;
 }
